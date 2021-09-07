@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  background-color: #962600;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+}
+
+.logo .icon {
+  float: left;
+  width: 100px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.logo h1 {
+  position: relative;
+  display: inline-block;
+  color: #f2f2f2;
+  top: 15px;
+  left: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.topNav {
+  float: right;
+  background-color: #962600;
+}
+
+.topNav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.topNav li {
+  display: inline-block;
+  margin-left: 50px;
+  padding-top: 25px;
+  position: relative;
+}
+
+.topNav a {
+  color: #f2f2f2;
+  text-decoration: none;
+  text-transform: uppercase;
+  font: "Open Sans";
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.topNav a:hover {
+  color: #f2f2f2;
+}
+
+.topNav a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #f2f2f2;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+.topNav a:hover::before {
+  width: 100%;
+}
+
+.cover {
+  position: relative;
+  overflow: hidden;
+  max-height: 900px;
+  background-image: url("/img/furesign_cover_2.jpg");
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 100vh;
+}
+
+.cover .container {
+  float: left;
+  padding-left: 20%;
+  padding-top: 15%;
+  text-align: left;
+  width: 50%;
+}
